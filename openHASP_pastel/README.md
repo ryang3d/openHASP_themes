@@ -1,5 +1,5 @@
 
-## openHASP_pastel
+## openHASP_pastel [NOT MODIFIED FOR LANBON L8 YET...]
 
 openHASP_pastel is a simple, beginner friendly, good looking theme for openHASP. Complexity is kept to a minimal, so to make this theme more accessible to newcomers.
 
