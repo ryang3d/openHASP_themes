@@ -1,6 +1,8 @@
+[NOTE: CONVERSION IS STILL IN PROGRESS]
+
 # openHASP Mushroom-like cards
 
-Here is my personal configuration for openHASP, using a 320x480 TFT lcd from a Wirelass Tag module (wt32-sc01).
+Here is my personal configuration for openHASP, using a Lanbon L8 (240x320) wall plate.
 All of the look/feel inspired by the excellent Mushroom cards for Home Assistant.
 
 ## How to use
