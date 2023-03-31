@@ -1,4 +1,4 @@
-This is a fork of https://github.com/8bitmcu/openHASP_themes. The intent is to modify the openHASP_mushroon theme for use with a Lanbon L8 which has a smaller screen than what 8bitmcu is using. This readme will be updated as progress is made.
+This is a fork of https://github.com/8bitmcu/openHASP_themes. The intent is to modify the openHASP_mushroom theme for use with a Lanbon L8 which has a smaller screen than what 8bitmcu is using. This readme will be updated as progress is made.
 
 CURRENT LANBON L8 CONVERSION PROGRESS:
 
