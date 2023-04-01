@@ -1,4 +1,95 @@
 openhasp:
+  lrplate:
+    objects:
+      - obj: "p0b3"  # temperature label on all pages
+        properties:
+          "text": '{{ states("sensor.hallway_temperature") }}°F'
+      - obj: "p0b1"  # time label on all pages
+        properties:
+          "text": '{{ states("sensor.timenew") }}'
+      - obj: "p1b18"  # light-switch toggle button
+        properties:
+          "val": '{{ 1 if states("light.living_room_lights") == "on" else 0 }}'
+          "text": '{{ "\uE6E8" if is_state("light.living_room_lights", "on") else "\uE335" | e }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.living_room_lights"
+      - obj: "p1b19" # slider
+        properties:
+          "val": "{{ state_attr('light.living_room_lights', 'brightness') if state_attr('light.living_room_lights', 'brightness') != None else 0 }}"
+        event:
+          "changed":
+            - service: light.turn_on
+              data:
+                entity_id: light.living_room_lights
+                brightness:  "{{ val }}"
+          "up":
+            - service: light.turn_on
+              data:
+                entity_id: light.living_room_lights
+                brightness:  "{{ val }}"
+                
+      - obj: "p1b20" # Light color
+        properties:
+          "color": >
+            {% if is_state('light.ht_sconces_only','on') %}
+            {% set rgb = state_attr('light.ht_sconces_only','rgb_color') %}
+            {{ "#%02x%02x%02x" | format(rgb[0],rgb[1],rgb[2]) }}
+            {% endif %}
+        event:
+          "up":
+            - service: light.turn_on
+              data:
+                entity_id: light.ht_sconces_only
+                rgb_color: "[{{ r }},{{ g }},{{ b }}]"
+                
+      - obj: "p1b21"  # ceiling fan toggle button
+        properties:
+          "val": '{{ 1 if states("fan.living_room_ceiling_fan") == "on" else 0 }}'
+          "text": "\uE210"
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "fan.living_room_ceiling_fan"
+      - obj: "p1b22" # slider
+        properties:
+          "val": "{{ state_attr('fan.living_room_ceiling_fan','percentage') }}"
+          "enabled": "{{ 'false' if (is_state('fan.living_room_ceiling_fan','unavailable') or is_state('fan.living_room_ceiling_fan','unknown')) else 'true' }}"
+        event:
+          "up":
+            - service: fan.set_percentage
+              target:
+                entity_id: fan.living_room_ceiling_fan
+              data:
+                percentage: '{{ val }}'
+                
+      - obj: "p1b4"  # Home Mode Scene Button
+        event:
+          "up":
+            - service: scene.turn_on
+              data_template:
+                entity_id: scene.home_mode
+      - obj: "p1b7"  # Movie Mode Scene Button
+        event:
+          "up":
+            - service: scene.turn_on
+              data_template:
+                entity_id: scene.movie_mode
+      - obj: "p1b10"  # Night Mode Scene Button
+        event:
+          "up":
+            - service: scene.turn_on
+              data_template:
+                entity_id: scene.night_mode
+      - obj: "p1b13"  # Sleep Mode Scene Button
+        event:
+          "up":
+            - service: scene.turn_on
+              data_template:
+                entity_id: scene.sleep_mode
+
+# ORIGINAL CONFIG BELOW
   plate02:
     objects:
       
