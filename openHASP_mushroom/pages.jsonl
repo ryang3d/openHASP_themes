@@ -1,48 +1,42 @@
 {"id":0,"bg_color":"#111"}
-{"page":1,"id":0,"bg_color":"#111"}
-{"page":2,"id":0,"bg_color":"#111"}
-{"page":3,"id":0,"bg_color":"#111"}
-{"page":4,"id":0,"bg_color":"#111"}
+{"page":1,"id":0,"bg_color":"#111","swipe":true}
+{"page":2,"id":0,"bg_color":"#111","swipe":true}
+{"page":3,"id":0,"bg_color":"#111","swipe":true}
+{"page":4,"id":0,"bg_color":"#111","swipe":true}
 
 
-{"page":0,"id":1,"obj":"label","x":5,"y":5,"h":30,"w":320,"text":"2022/10/12  3:42 PM","align":1, "text_color":"#FFF", "text_font": 24}
+{"comment":"------------------Displays on all pages - show nav buttons at bottom - time, room, & temp at top"}
+{"page":0,"id":1,"obj":"label","x":5,"y":5,"h":25,"w":62,"text":"0:00","align":0,"text_color":"#FFF", "text_font": 16,"swipe":true}
+{"page":0,"id":2,"obj":"label","x":85,"y":5,"h":25,"w":110,"text":"Living Room","value_font":16,"text_color":"#FFF", "text_font": 16,"swipe":true}
+{"page":0,"id":3,"obj":"label","x":165,"y":5,"h":25,"w":70,"text":"00°F","align":2,"text_color":"#FFF", "text_font": 16,"swipe":true}
 
+{"comment":"------------------Living Room Scenes"}
+{"page":1,"id":4,"obj":"btn","x":2,"y":25,"w":56,"h":56,"radius":10,"click":true,"toggle":false,"border_side":0,"bg_color":"#1c1c1c","swipe":true}
+{"page":1,"id":5,"obj":"obj","x":6,"y":30,"w":46,"h":46,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false,"swipe":true}
+{"page":1,"id":6,"obj":"label","x":13,"y":34,"w":36,"h":36,"text":"\uE2DC", "text_font": 32, "text_color":"#2196F3","swipe":true}
 
+{"page":1,"id":7,"obj":"btn","x":62,"y":25,"w":56,"h":56,"radius":10,"click":true,"toggle":false,"border_side":0,"bg_color":"#1c1c1c","swipe":true}
+{"page":1,"id":8,"obj":"obj","x":68,"y":30,"w":46,"h":46,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false,"swipe":true}
+{"page":1,"id":9,"obj":"label","x":75,"y":35,"w":36,"h":36,"text":"\uE502", "text_font": 32, "text_color":"#2196F3","swipe":true}
 
+{"page":1,"id":10,"obj":"btn","x":122,"y":25,"w":56,"h":56,"radius":10,"click":true,"toggle":false,"border_side":0,"bg_color":"#1c1c1c","swipe":true}
+{"page":1,"id":11,"obj":"obj","x":128,"y":30,"w":46,"h":46,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false,"swipe":true}
+{"page":1,"id":12,"obj":"label","x":136,"y":34,"w":36,"h":36,"text":"\uE594", "text_font": 32, "text_color":"#2196F3","swipe":true}
 
-{"page":1,"id":1,"obj":"label","x":20,"y":35,"w":200,"h":40,"text":"Sensors", "text_font": 32}
+{"page":1,"id":13,"obj":"btn","x":182,"y":25,"w":56,"h":56,"radius":10,"click":true,"toggle":false,"border_side":0,"bg_color":"#1c1c1c","swipe":true}
+{"page":1,"id":14,"obj":"obj","x":189,"y":30,"w":46,"h":46,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false,"swipe":true}
+{"page":1,"id":15,"obj":"label","x":197,"y":33,"w":36,"h":36,"text":"\uE2E3", "text_font": 32, "text_color":"#2196F3","swipe":true}
 
-{"page":1,"id":2,"obj":"obj","x":5,"y":75,"w":152,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
-{"page":1,"id":3,"obj":"label","x":25,"y":87,"w":200,"h":40,"text":"Temperature", "text_font": 16, "text_color":"#9b9b9b"}
-{"page":1,"id":4,"obj":"label","x":25,"y":110,"w":200,"h":40,"text":"27.2°C", "text_font": 24}
+{"comment":"------------------Lighting"}
+{"page":1,"id":16,"obj":"obj","x":2,"y":85,"w":236,"h":141,"radius":10,"border_side":0,"bg_color":"#1c1c1c","click":false,"swipe":true}
+{"page":1,"id":18,"obj":"btn","x":6,"y":90,"w":46,"h":46,"toggle":true,"text":"\uE335", "text_font": 32, "text_color":"#2196F3","swipe":true}
+{"page":1,"id":19,"obj":"slider","x":71,"y":108,"h":10,"w":155,"min":1,"max":100}
+{"page":1,"id":20,"obj":"cpicker","x":75,"y":130,"w":90,"h":90}
 
-{"page":1,"id":5,"obj":"obj","x":162,"y":75,"w":152,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
-{"page":1,"id":6,"obj":"label","x":182,"y":87,"w":200,"h":40,"text":"Humidity", "text_font": 16, "text_color":"#9b9b9b"}
-{"page":1,"id":7,"obj":"label","x":182,"y":110,"w":200,"h":40,"text":"52%", "text_font": 24}
-
-
-{"page":1,"id":8,"obj":"label","x":20,"y":155,"w":200,"h":40,"text":"Devices", "text_font": 32}
-
-{"page":1,"id":11,"obj":"obj","x":5,"y":195,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
-{"page":1,"id":12,"obj":"obj","x":15,"y":200,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#493416","click":false}
-{"page":1,"id":13,"obj":"label","x":23,"y":205,"w":65,"h":65,"text":"\uE769", "text_font": 48, "text_color":"#e88c03"}
-{"page":1,"id":14,"obj":"label","x":100,"y":205,"w":200,"h":40,"text":"Ceiling Lamp", "text_font": 24}
-{"page":1,"id":15,"obj":"label","x":100,"y":235,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
-
-{"page":1,"id":21,"obj":"obj","x":5,"y":275,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
-{"page":1,"id":22,"obj":"obj","x":15,"y":280,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#253926","click":false}
-{"page":1,"id":23,"obj":"label","x":23,"y":285,"w":140,"h":140,"text":"\uE01B", "text_font": 48, "text_color":"#4CAF50"}
-{"page":1,"id":24,"obj":"label","x":100,"y":285,"w":200,"h":40,"text":"A/C Fan", "text_font": 24}
-{"page":1,"id":25,"obj":"label","x":100,"y":315,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
-
-{"page":1,"id":31,"obj":"obj","x":5,"y":355,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
-{"page":1,"id":32,"obj":"obj","x":15,"y":360,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#2c2c2c","click":false}
-{"page":1,"id":33,"obj":"label","x":23,"y":365,"w":140,"h":140,"text":"\uE210", "text_font": 48, "text_color":"#6F6F6F"}
-{"page":1,"id":34,"obj":"label","x":100,"y":365,"w":200,"h":40,"text":"Window Fan", "text_font": 24}
-{"page":1,"id":35,"obj":"label","x":100,"y":395,"w":200,"h":40,"text":"Off", "text_font": 16, "text_color":"#9b9b9b"}
-
-
-
+{"comment":"------------------Ceiling Fan"}
+{"page":1,"id":21,"obj":"obj","x":2,"y":230,"w":236,"h":56,"radius":10,"border_side":0,"bg_color":"#1c1c1c","click":false,"swipe":true}
+{"page":1,"id":22,"obj":"btn","x":6,"y":235,"w":46,"h":46,"toggle":true,"text":"\uE210", "text_font": 32, "text_color":"#2196F3","swipe":true}
+{"page":1,"id":23,"obj":"slider","x":71,"y":253,"h":10,"w":155,"min":1,"max":100}
 
 
 {"page":2,"id":1,"obj":"label","x":20,"y":35,"w":140,"h":40,"text":"Devices", "text_font": 32}
@@ -149,11 +143,9 @@
 
 
 
-
-
-
-{"page":0,"id":10,"obj":"btn","action":"prev","x":0,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE141","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32} 
-{"page":0,"id":11,"obj":"btn","action":"back","x":107,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE2DC","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32}  
-{"page":0,"id":12,"obj":"btn","action":"next","x":214,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE142","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32}
+{"page":0,"id":10,"obj":"btn","action":"prev","x":0,"y":290,"w":80,"h":30,"bg_color":"#1c1c1c","text":"\uE141","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":24} 
+{"page":0,"id":11,"obj":"btn","action":"back","x":80,"y":290,"w":80,"h":30,"bg_color":"#1c1c1c","text":"\uE2DC","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":16}  
+{"page":0,"id":12,"obj":"btn","action":"next","x":160,"y":290,"w":80,"h":30,"bg_color":"#1c1c1c","text":"\uE142","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":24}  
 {"page":1,"id":0,"prev":4}
 {"page":4,"id":0,"next":1}
+
